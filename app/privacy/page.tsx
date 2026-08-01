@@ -33,8 +33,21 @@ export default function PrivacyPage() {
           </h2>
 
           <p>
-            Welcome to Mudball Golf. This Privacy Policy explains how we collect, use, store and
-            protect your personal information when you visit our website mudballgolf.uk
+            Welcome to Mudball Golf.
+          </p>
+
+          <p className="mt-3">
+            Mudball Golf is a golf media and lifestyle brand exploring the
+            stories, culture, people and ideas that make the game meaningful.
+          </p>
+
+          <p className="mt-3">
+            This Privacy Policy explains how we collect, use, store and
+            protect your personal information when you visit our website:
+          </p>
+
+          <p className="mt-3">
+            https://mudballgolf.uk
           </p>
         </div>
 
@@ -169,7 +182,11 @@ export default function PrivacyPage() {
 
           <p className="mt-3">
             You can unsubscribe at any time by following the unsubscribe
-            instructions included in our emails or by contacting hello@mudballgolf.uk
+            instructions included in our emails or by contacting:
+          </p>
+
+          <p className="mt-3">
+            hello@mudballgolf.uk
           </p>
         </div>
 
@@ -214,7 +231,11 @@ export default function PrivacyPage() {
 
           <p>
             We do not sell your personal information or rent your email address
-            to third parties. We may share information with trusted service providers who help us
+            to third parties.
+          </p>
+
+          <p className="mt-3">
+            We may share information with trusted service providers who help us
             operate Mudball Golf.
           </p>
         </div>
@@ -227,7 +248,11 @@ export default function PrivacyPage() {
 
           <p>
             At present, Mudball Golf does not use non-essential cookies or
-            advertising tracking technologies. If we introduce analytics or other tracking technologies in the
+            advertising tracking technologies.
+          </p>
+
+          <p className="mt-3">
+            If we introduce analytics or other tracking technologies in the
             future, we will update this Privacy Policy accordingly.
           </p>
         </div>
@@ -245,7 +270,11 @@ export default function PrivacyPage() {
 
           <p className="mt-3">
             You may request deletion of your information at any time by
-            contacting hello@mudballgolf.uk
+            contacting:
+          </p>
+
+          <p className="mt-3">
+            hello@mudballgolf.uk
           </p>
         </div>
 
@@ -276,7 +305,11 @@ export default function PrivacyPage() {
 
           <p>
             Our website may contain links to third-party websites, including
-            social media platforms. We are not responsible for the privacy practices, content or
+            social media platforms and external resources.
+          </p>
+
+          <p className="mt-3">
+            We are not responsible for the privacy practices, content or
             security of external websites.
           </p>
         </div>
@@ -291,6 +324,11 @@ export default function PrivacyPage() {
             We may update this Privacy Policy from time to time as Mudball Golf
             develops.
           </p>
+
+          <p className="mt-3">
+            Any changes will be published on this page with an updated revision
+            date.
+          </p>
         </div>
 
 
@@ -300,9 +338,17 @@ export default function PrivacyPage() {
           </h2>
 
           <p>
-            If you have questions about this Privacy Policy, please contact hello@mudballgolf.uk
+            If you have questions about this Privacy Policy or how we handle
+            your information, please contact:
+          </p>
+
+          <p className="mt-3">
+            Mudball Golf
+            <br />
+            hello@mudballgolf.uk
           </p>
         </div>
+
 
       </section>
 
