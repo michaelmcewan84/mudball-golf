@@ -31,13 +31,24 @@ export default function SignupForm() {
       privacy_consent: privacy,
     });
 
-    setLoading(false);
-
     if (error) {
+      setLoading(false);
       alert(error.message);
       return;
     }
 
+    await fetch("/api/send-welcome", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        name,
+      }),
+    });
+
+    setLoading(false);
     setSuccess(true);
   }
 
@@ -99,16 +110,16 @@ export default function SignupForm() {
           className="mt-1"
         />
         <span>
-  I have read the{" "}
-  <a
-    href="/privacy"
-    target="_blank"
-    className="underline hover:text-white"
-  >
-    Privacy Policy
-  </a>{" "}
-  and consent to Mudball Golf storing my information.
-</span>
+          I have read the{" "}
+          <a
+            href="/privacy"
+            target="_blank"
+            className="underline hover:text-white"
+          >
+            Privacy Policy
+          </a>{" "}
+          and consent to Mudball Golf storing my information.
+        </span>
       </label>
 
       <button
