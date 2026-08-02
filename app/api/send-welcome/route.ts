@@ -11,9 +11,12 @@ export async function POST(request: Request) {
       from: "Mudball Golf <hello@mudballgolf.uk>",
       to: email,
       subject: "You're on the list!",
-      react: WelcomeEmail({ name }),
+      react: WelcomeEmail({
+        name,
+        email,
+      }),
       headers: {
-        "List-Unsubscribe": "<https://mudballgolf.uk/unsubscribe>",
+        "List-Unsubscribe": `<https://mudballgolf.uk/unsubscribe?email=${email}>`,
       },
     });
 
