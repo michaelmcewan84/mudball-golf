@@ -10,12 +10,13 @@ export async function POST(request: Request) {
     );
   }
 
-  const { error } = await supabase
+  const { data, error } = await supabase
     .from("signups")
     .update({
       marketing_consent: false,
     })
-    .eq("email", email);
+    .eq("email", email)
+    .select();
 
   if (error) {
     return Response.json(
@@ -26,5 +27,6 @@ export async function POST(request: Request) {
 
   return Response.json({
     success: true,
+    updated: data,
   });
 }
