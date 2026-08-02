@@ -27,6 +27,7 @@ export async function POST(request: Request) {
 
   return Response.json({
     success: true,
+    updatedCount: data?.length ?? 0,
     updated: data,
   });
 }
